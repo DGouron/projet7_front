@@ -1,0 +1,19 @@
+.nav__container {
+  display: flex;
+  gap: 20px;
+}
+.nav__item {
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 34px;
+  cursor: pointer;
+}
+.nav__item:hover,
+.nav__item:active {
+  text-decoration: underline;
+}
