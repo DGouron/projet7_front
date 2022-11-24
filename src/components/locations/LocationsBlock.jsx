@@ -19,7 +19,12 @@ function LocationsBlock() {
   return (
     <section className={styles.locations__container}>
       {locations.map((location) => {
-        return <LocationsCard key={location.name} locationData={location} />;
+        return (
+          <LocationsCard
+            key={location.name + location.id}
+            locationData={location}
+          />
+        );
       })}
     </section>
   );
