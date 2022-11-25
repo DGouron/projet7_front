@@ -1,11 +1,11 @@
-.headder__container {
+.header__container {
   align-items: center;
   display: flex;
   height: 68px;
   justify-content: space-between;
-  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
 }
-.headder__container img {
+.header__container img {
   width: 145px;
 }

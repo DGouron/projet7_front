@@ -5,7 +5,7 @@ import NavBar from "../../nav/NavBar";
 
 function HeaderBlock() {
   return (
-    <header className={styles.headder__container}>
+    <header className={styles.header__container}>
       <Logo />
       <NavBar />
     </header>

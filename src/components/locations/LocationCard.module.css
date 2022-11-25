@@ -1,5 +1,6 @@
 .location__card {
   flex: 0 1 100%;
+  max-width: 340px;
   height: 340px;
   background: #ff6060;
   border-radius: 10px;
@@ -29,6 +30,6 @@
 }
 @media only screen and (min-width: 768px) {
   .location__card {
-    flex: 1 1 20%;
+    flex: 1 1 30%;
   }
 }

@@ -4,11 +4,14 @@
 }
 .nav__item {
   display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: right;
   align-items: flex-end;
   text-align: right;
   color: #ff6060;
   font-size: 12px;
-  font-weight: 500;
   text-decoration: none;
   line-height: 34px;
   cursor: pointer;
