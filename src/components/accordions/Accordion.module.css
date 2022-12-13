@@ -1,0 +1,53 @@
+.accordion__container div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 47px;
+  background-color: #ff6060;
+  padding: 0 18px 0 18px;
+}
+.accordion__container div:hover {
+  cursor: pointer;
+}
+.accordion__header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+}
+.accordion__container p {
+  width: 100%;
+  margin: 0;
+  padding: 18px;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  color: #ff6060;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 142.6%;
+  text-align: start;
+}
+.accordion__container {
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+}
+.accordion__icon,
+.accordion__open {
+  width: 20px;
+  height: 20px;
+  transition: 0.3s ease-in-out;
+  transform: rotate(-180deg);
+}
+
+.accordion__open {
+  transform: rotate(0deg);
+}

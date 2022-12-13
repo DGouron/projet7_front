@@ -1,0 +1,39 @@
+.notfound__container,
+.notfound__container a {
+  color: #ff6060;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+.notfound__container h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  text-align: center;
+  margin: 20px;
+  line-height: 142.6%;
+}
+
+.notfound__container p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  display: flex;
+  align-items: flex-end;
+  line-height: 142.6%;
+  margin: 0;
+}
+
+.notfound__container a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+
+  /* identical to box height, or 26px */
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;
+
+  margin-top: 40px;
+}
