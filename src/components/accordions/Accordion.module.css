@@ -51,3 +51,7 @@
 .accordion__open {
   transform: rotate(0deg);
 }
+.accordion__column {
+  display: flex;
+  flex-direction: column;
+}

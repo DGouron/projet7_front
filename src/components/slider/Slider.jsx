@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styles from "./Slider.module.css";
+import arrow from "../../assets/VectorArrow.svg";
 
 function Slider({ pictures }) {
   // Définissez un état pour enregistrer l'index de l'image actuellement affichée
@@ -16,14 +18,33 @@ function Slider({ pictures }) {
   };
 
   return (
-    <div>
+    <section className={styles.slider__container}>
       {/* Affichez l'image actuelle */}
-      <img src={pictures[currentIndex]} alt={pictures} />
-
-      {/* Affichez des boutons pour passer à l'image suivante ou précédente */}
-      <button onClick={previous}>Précédent</button>
-      <button onClick={next}>Suivant</button>
-    </div>
+      <div className={styles.slide__wrapper}>
+        <img
+          src={pictures[currentIndex]}
+          alt={pictures}
+          className={styles.slider__slide}
+        />
+        <span className={styles.slider__counter}>
+          {currentIndex + 1}/{pictures.length}
+        </span>
+        <img
+          src={arrow}
+          alt="arrow"
+          onClick={previous}
+          className={styles.slider__previousarrow}
+          style={{ display: "inline-block", margin: "0 auto" }}
+        />
+        <img
+          src={arrow}
+          alt="arrow"
+          onClick={next}
+          className={styles.slider__nextarrow}
+          style={{ display: "inline-block", margin: "0 auto" }}
+        />
+      </div>
+    </section>
   );
 }
 

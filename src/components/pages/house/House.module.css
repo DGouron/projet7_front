@@ -1,0 +1,35 @@
+.house__container {
+  max-width: 1240px;
+  width: 100%;
+}
+.house__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.house__tagrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.house__tag {
+  margin-right: 10px;
+}
+
+.house__rating {
+  display: inline-block;
+}
+
+.house__row {
+  display: flex;
+  gap: 60px;
+}
+
+.house__row > * {
+  margin-right: 10px;
+}
+
+.house__row > *:last-child {
+  margin-right: 0;
+}
