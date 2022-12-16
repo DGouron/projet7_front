@@ -17,8 +17,13 @@
   margin-right: 10px;
 }
 
-.house__rating {
-  display: inline-block;
+.house__rightpannel,
+.house__leftpannel {
+  display: flex;
+  flex-direction: column;
+}
+.house__leftpannel {
+  gap: 30px;
 }
 
 .house__row {
@@ -32,4 +37,21 @@
 
 .house__row > *:last-child {
   margin-right: 0;
+}
+.house__title,
+.house__location {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: #ff6060;
+}
+.house__title {
+  font-size: 36px;
+}
+.house__location {
+  font-size: 18px;
 }

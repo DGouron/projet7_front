@@ -1,0 +1,24 @@
+.host__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.host__name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  color: #ff6060;
+}
+
+.host__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #c4c4c4;
+}

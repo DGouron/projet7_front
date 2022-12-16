@@ -6,6 +6,7 @@ import SimpleAccordion from "../../accordions/SimpleAccordion";
 import ListAccordion from "../../accordions/ListAccordion";
 import Rating from "../../rating/Rating";
 import Tag from "../../tag/Tag";
+import HostView from "../../host/HostView";
 
 function House() {
   const retrievedIdFromUrl = window.location.pathname.split("/")[2];
@@ -17,16 +18,23 @@ function House() {
   return (
     <main>
       <Slider pictures={house?.pictures} />
+
       <section className={styles.house__container}>
-        <h1>{house?.title}</h1>
-        <h2>{house?.location}</h2>
         <div className={styles.house__wrapper}>
-          <article className={styles.house__tagrow}>
-            {house?.tags.map((tag) => (
-              <Tag key={tag} tagName={tag} className={styles.house__tag} />
-            ))}
-          </article>
-          <div className={styles.house__rating}>
+          <div className={styles.house__leftpannel}>
+            <h1 className={styles.house__title}>{house?.title}</h1>
+            <h2 className={styles.house__location}>{house?.location}</h2>
+            <article className={styles.house__tagrow}>
+              {house?.tags.map((tag) => (
+                <Tag key={tag} tagName={tag} className={styles.house__tag} />
+              ))}
+            </article>
+          </div>
+          <div className={styles.house__rightpannel}>
+            <HostView
+              hostName={house?.host.name}
+              hostPicture={house?.host.picture}
+            />
             <Rating ratingLevel={house?.rating} />
           </div>
         </div>
