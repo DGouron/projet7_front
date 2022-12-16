@@ -7,13 +7,16 @@ import ListAccordion from "../../accordions/ListAccordion";
 import Rating from "../../rating/Rating";
 import Tag from "../../tag/Tag";
 import HostView from "../../host/HostView";
+import { Navigate, useParams } from "react-router";
 
 function House() {
-  const retrievedIdFromUrl = window.location.pathname.split("/")[2];
-
+  const { id } = useParams();
   let house = {};
-  if (retrievedIdFromUrl !== undefined) {
-    house = HousingData.find((house) => house.id === retrievedIdFromUrl);
+  if (id !== undefined) {
+    house = HousingData.find((house) => house.id === id);
+    if (house === false || house === undefined) {
+      return <Navigate to="/404" />;
+    }
   }
   return (
     <main>
