@@ -13,7 +13,7 @@ function About() {
           <SimpleAccordion
             header={about.header}
             description={about.description}
-            key={about.id}
+            key={about.header}
           />
         ))}
       </section>
