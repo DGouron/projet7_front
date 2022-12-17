@@ -18,6 +18,7 @@ function NavItem({ url, title }) {
       to={url}
       className={styles.nav__item}
       style={({ isActive }) => (isActive ? activeStyle : unactiveStyle)}
+      end={true}
     >
       {title}
     </NavLink>
