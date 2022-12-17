@@ -26,23 +26,27 @@ function Slider({ pictures }) {
           alt={pictures}
           className={styles.slider__slide}
         />
-        <span className={styles.slider__counter}>
-          {currentIndex + 1}/{pictures.length}
-        </span>
-        <img
-          src={arrow}
-          alt="arrow"
-          onClick={previous}
-          className={styles.slider__previousarrow}
-          style={{ display: "inline-block", margin: "0 auto" }}
-        />
-        <img
-          src={arrow}
-          alt="arrow"
-          onClick={next}
-          className={styles.slider__nextarrow}
-          style={{ display: "inline-block", margin: "0 auto" }}
-        />
+        {pictures.length > 1 ? (
+          <>
+            <span className={styles.slider__counter}>
+              {currentIndex + 1}/{pictures.length}
+            </span>
+            <img
+              src={arrow}
+              alt="arrow"
+              onClick={previous}
+              className={styles.slider__previousarrow}
+              style={{ display: "inline-block", margin: "0 auto" }}
+            />
+            <img
+              src={arrow}
+              alt="arrow"
+              onClick={next}
+              className={styles.slider__nextarrow}
+              style={{ display: "inline-block", margin: "0 auto" }}
+            />
+          </>
+        ) : null}
       </div>
     </section>
   );
