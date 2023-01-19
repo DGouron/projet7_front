@@ -7,9 +7,23 @@ function Rating({ ratingLevel }) {
   const maxRating = 5;
   const rating = Array.from({ length: maxRating }, (_, index) => {
     if (index < ratingLevel) {
-      return <img key={index} src={FullStar} alt="full star" />;
+      return (
+        <img
+          key={index}
+          src={FullStar}
+          alt="full star"
+          className={styles.rating__star}
+        />
+      );
     } else {
-      return <img key={index} src={EmptyStar} alt="empty star" />;
+      return (
+        <img
+          key={index}
+          src={EmptyStar}
+          alt="empty star"
+          className={styles.rating__star}
+        />
+      );
     }
   });
   return <aside className={styles.rating__container}>{rating}</aside>;

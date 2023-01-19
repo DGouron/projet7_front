@@ -18,3 +18,10 @@
   color: #ffffff;
   padding: 0 30px 0 30px;
 }
+
+/* mobile first */
+@media (min-width: 1024px) {
+  .tag__container {
+    font-size: 18px;
+  }
+}

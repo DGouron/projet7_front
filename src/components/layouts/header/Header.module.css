@@ -4,8 +4,17 @@
   height: 68px;
   justify-content: space-between;
   max-width: 1240px;
+  width: 90%;
   margin: 0 auto;
 }
 .header__container img {
   width: 145px;
+}
+
+/* mobile first */
+@media (min-width: 1024px) {
+  .header__container {
+    height: 100px;
+    width: 100%;
+  }
 }

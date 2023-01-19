@@ -1,14 +1,21 @@
+.notfound__container {
+  margin-top: 40%;
+}
 .notfound__container,
 .notfound__container a {
   color: #ff6060;
   font-family: "Montserrat", sans-serif;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .notfound__container h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 288px;
+  font-size: 96px;
   text-align: center;
   margin: 20px;
   line-height: 142.6%;
@@ -17,23 +24,49 @@
 .notfound__container p {
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 18px;
   display: flex;
   align-items: flex-end;
   line-height: 142.6%;
   margin: 0;
+  text-align: center;
 }
 
 .notfound__container a {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 142.6%;
 
-  /* identical to box height, or 26px */
   display: flex;
   align-items: flex-end;
   text-decoration-line: underline;
 
   margin-top: 40px;
+}
+
+/* mobile first */
+@media (min-width: 1024px) {
+  .notfound__container h1 {
+    font-size: 288px;
+  }
+  .notfound__container p {
+    font-size: 36px;
+  }
+  .notfound__container a {
+    font-size: 18px;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .notfound__container h1 {
+    font-size: 120px;
+  }
+  .notfound__container p {
+    font-size: 24px;
+  }
+  .notfound__container a {
+    font-size: 16px;
+  }
 }

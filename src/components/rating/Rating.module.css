@@ -2,3 +2,21 @@
   display: flex;
   justify-content: space-between;
 }
+.rating__star {
+  width: 18px;
+  height: 18px;
+}
+/* mobile first */
+@media (min-width: 1024px) {
+  .rating__star {
+    width: 30px;
+    height: 30px;
+  }
+}
+/* tablette size */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .rating__star {
+    width: 25px;
+    height: 25px;
+  }
+}

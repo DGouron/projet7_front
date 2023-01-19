@@ -9,7 +9,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 142.6%;
   display: flex;
   text-align: right;
@@ -17,8 +17,30 @@
 }
 
 .host__avatar {
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background: #c4c4c4;
+}
+
+/* mobile first */
+@media (min-width: 1024px) {
+  .host__name {
+    font-size: 18px;
+  }
+  .host__avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* tablette size */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .host__name {
+    font-size: 16px;
+  }
+  .host__avatar {
+    width: 48px;
+    height: 48px;
+  }
 }
