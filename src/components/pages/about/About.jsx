@@ -7,7 +7,7 @@ import styles from "./About.module.css";
 function About() {
   return (
     <main>
-      <BannerBlock bShowTitle={false} backgroundUrl={`./banner_about.svg`} />
+      <BannerBlock bShowTitle={false} backgroundUrl={`./banner_about.webp`} />
       <section className={styles.about__container}>
         {aboutData.map((about) => (
           <SimpleAccordion

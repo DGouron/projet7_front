@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Banner.module.css";
 
 function BannerBlock({
-  backgroundUrl = "./banner_home.svg",
+  backgroundUrl = "./banner_home.webp",
   bShowTitle = true,
 }) {
   return (
