@@ -1,6 +1,7 @@
 .rating__container {
   display: flex;
   justify-content: space-between;
+  align-self: flex-end;
 }
 .rating__star {
   width: 18px;
